@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Swapnil Roy" />
+    <meta description="Centigrade to Fahrenheit Convertor" />
+    <title>CentiToFar</title>
+    <link rel="icon" href="../static/img/informatics.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/styles.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h2>INFO3000 Course</h2>
+    </header>
+
+    <hr />
+    <p>This program converts from Centigrade to Fahrenheit and vice versa.</p>
+    <main>
+      <form action="/Conversion" method="post">
+        <label for="temperature">Enter a temperature (°F/°C): </label>
+        <input
+          type="number"
+          step="any"
+          name="temperature"
+          id="temperature"
+          placeholder="Enter a Value"
+        />
+        <br />
+        <br />
+        <div class="hbox">
+          <label for="conversion-type">Convert to:</label>
+          <select name="conversion_type" id="conversion-type">
+            <option value="" disabled selected>Select a unit</option>
+            <option value="centigrade">Centigrade (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+          </select>
+        </div>
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+      <br />
+
+      <h3>Conversion: {{conversion}}</h3>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p>&copy; Data Science Course</p>
+    </footer>
+  </body>
+</html>

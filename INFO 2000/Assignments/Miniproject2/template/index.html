@@ -1,0 +1,18 @@
+<!DOCTYPE html> <!-- This is the HTML5 doctype declaration -->
+<html lang="en"> <!-- This is the opening HTML tag with the language attribute set to English -->
+<head> <!-- This is the opening head tag -->
+    <meta charset="UTF-8"> <!-- This is the meta tag with the charset attribute set to UTF-8 -->
+    <title>Product Management System</title> <!-- This is the title tag with the text Product Management System -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- This is the link tag with the rel attribute set to stylesheet and the href attribute set to the URL for the static file styles.css -->
+</head> <!-- This is the closing head tag -->
+<body> <!-- This is the opening body tag -->
+    <h1>Product Management System</h1> <!-- This is the h1 tag with the text Product Management System -->
+    <div>  <!-- This is the opening div tag -->
+        <p><strong>Please select</strong></p> <!-- This is the p tag with the text Please select -->
+        <ul> <!-- This is the opening ul tag -->
+            <li><a href="{{ url_for('product_data_entry') }}">Product Data Entry</a></li> <!-- This is the li tag with the a tag that links to the product_data_entry route -->
+            <li><a href="{{ url_for('retrieve_data_from_database') }}">Retrieve Data From Database</a></li> <!-- This is the li tag with the a tag that links to the retrieve_data_from_database route -->
+        </ul> <!-- This is the closing ul tag -->
+    </div> <!-- This is the closing div tag -->
+</body> <!-- This is the closing body tag -->
+</html>  <!-- This is the closing HTML tag -->

@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- This is the HTML5 doctype declaration -->
+<html lang="en"> <!-- This is the opening HTML tag with the language attribute set to English -->
+<head> <!-- This is the opening head tag -->
+    <meta charset="UTF-8"> <!-- This is the meta tag with the charset attribute set to UTF-8 -->
+    <title>Product Data Entry</title> <!-- This is the title tag with the text Product Data Entry -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- This is the link tag with the rel attribute set to stylesheet and the href attribute set to the URL for the static file styles.css -->
+</head> <!-- This is the closing head tag -->
+<body> <!-- This is the opening body tag -->
+    <h1>Product Management System</h1> <!-- This is the h1 tag with the text Product Management System -->
+    <div> <!-- This is the opening div tag -->
+        <p><strong>Enter Product Data</strong></p> <!-- This is the p tag with the text Enter Product Data -->
+        <form action="{{ url_for('submit_product_data') }}" method="post"> <!-- This is the opening form tag with the action attribute set to the URL for the submit_product_data route and the method attribute set to post -->
+            <label for="category">Product Category:</label> <!-- This is the label tag with the text Product Category -->
+            <input type="text" id="category" name="category" required><br><br> <!-- This is the input tag with the type attribute set to text, the id attribute set to category, the name attribute set to category, and the required attribute -->
+
+            <label for="prod_desc">Product Description:</label> <!-- This is the label tag with the text Product Description -->
+            <input type="text" id="prod_desc" name="prod_desc" required><br><br> <!-- This is the input tag with the type attribute set to text, the id attribute set to prod_desc, the name attribute set to prod_desc, and the required attribute -->
+
+            <label for="price">Price:</label> <!-- This is the label tag with the text Price -->
+            <input type="number" id="price" name="price" required min="0"><br><br> <!-- This is the input tag with the type attribute set to number, the id attribute set to price, the name attribute set to price, the required attribute, and the min attribute set to 0 -->
+
+            <label for="code">Product Code:</label> <!-- This is the label tag with the text Product Code -->
+            <input type="text" id="code" name="code" required pattern="[A-Z0-9]{3}"><br><br> <!-- This is the input tag with the type attribute set to text, the id attribute set to code, the name attribute set to code, the required attribute, and the pattern attribute set to [A-Z0-9]{3} -->
+
+            <input type="submit" value="Submit Data"> <!-- This is the input tag with the type attribute set to submit and the value attribute set to Submit Data -->
+        </form> <!-- This is the closing form tag -->
+    </div> <!-- This is the closing div tag -->
+</body> <!-- This is the closing body tag -->
+</html> <!-- This is the closing HTML tag -->

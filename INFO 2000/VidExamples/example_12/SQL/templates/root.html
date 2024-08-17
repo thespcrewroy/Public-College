@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+<ul>
+{% for item in data %}
+<li>{{item.id}},{{item.name_first}},{{item.name_last}},{{item.dob}}</li>
+{% endfor %}
+</ul>
+
+<br/>
+
+<form action="/" method="post" enctype="multipart/form-data">
+  id: <input type="text" name="id"/><br/>
+  First Name: <input type="text" name="name_first"/><br/>
+  Last Name: <input type="text" name="name_last"/><br/>
+  dob: <input type="text" name="dob"/><br/>
+<input type="submit"/>
+</form>
+
+{% endblock %}

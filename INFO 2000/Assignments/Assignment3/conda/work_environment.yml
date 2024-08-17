@@ -1,0 +1,9 @@
+name: work
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - requests
+  - pandas
+  - matplotlib
+prefix: /Users/swapnilroy/miniconda3/envs/work

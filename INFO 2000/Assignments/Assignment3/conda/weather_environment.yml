@@ -1,0 +1,8 @@
+name: info2000
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - matplotlib
+  - seaborn
+prefix: /Users/swapnilroy/miniconda3/envs/info2000

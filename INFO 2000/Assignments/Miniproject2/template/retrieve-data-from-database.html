@@ -1,0 +1,13 @@
+<!DOCTYPE html> <!-- This is the HTML5 doctype declaration -->
+<html lang="en"> <!-- This is the opening HTML tag with the language attribute set to English -->
+<head> <!-- This is the opening head tag -->
+    <meta charset="UTF-8"> <!-- This is the meta tag with the charset attribute set to UTF-8 -->
+    <title>Retrieve Data From Database</title> <!-- This is the title tag with the text Retrieve Data From Database -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- This is the link tag with the rel attribute set to stylesheet and the href attribute set to the URL for the static file styles.css -->
+</head> <!-- This is the closing head tag -->
+<h1>Product Management System</h1> <!-- This is the h1 tag with the text Product Management System -->
+<form action="{{ url_for('retrieve_data') }}" method="get"> <!-- This is the opening form tag with the action attribute set to the URL for the retrieve_data route and the method attribute set to get -->
+    <label>Select Category to retrieve from database: </label> <!-- This is the label tag with the text Select Category to retrieve from database -->
+    <input type="text" name="category" placeholder="leave blank to print all"> <!-- This is the input tag with the type attribute set to text, the name attribute set to category, and the placeholder attribute set to leave blank to print all -->
+    <button type="submit">Submit</button> <!-- This is the button tag with the type attribute set to submit and the text Submit -->
+</form> <!-- This is the closing form tag -->

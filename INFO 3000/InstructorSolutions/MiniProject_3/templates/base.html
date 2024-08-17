@@ -1,0 +1,34 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Model Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Classification Model Prediction</h2>
+        <form method="post" action="/predict">
+            <div class="form-group">
+                <label for="feature1">Feature 1 (numerical, can be empty):</label>
+                <input type="text" id="feature1" name="feature1">
+            </div>
+            <div class="form-group">
+                <label for="feature2">Feature 2 (categorical, can be empty):</label>
+                <select id="feature2" name="feature2">
+                    <option value="">Select an option</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+            </div>
+            <button type="submit">Predict</button>
+        </form>
+        <br>
+        {% if prediction_text %}
+            <h3>{{ prediction_text }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>

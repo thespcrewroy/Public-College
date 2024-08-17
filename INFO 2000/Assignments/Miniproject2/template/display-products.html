@@ -1,0 +1,28 @@
+<!DOCTYPE html> <!-- This is the HTML5 doctype declaration -->
+<html lang="en"> <!-- This is the opening HTML tag with the language attribute set to English -->
+<head> <!-- This is the opening head tag -->
+    <meta charset="UTF-8"> <!-- This is the meta tag with the charset attribute set to UTF-8 -->
+    <title>Display Products</title> <!-- This is the title tag -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- This is the link tag with the rel attribute set to stylesheet and the href attribute set to the URL for the static file styles.css -->
+</head> <!-- This is the closing head tag -->
+<h1>Product Management System</h1> <!-- This is the h1 tag with the text Product Management System -->
+<table border="1"> <!-- This is the opening table tag with the border attribute set to 1 -->
+    <tr> <!-- This is the opening tr tag -->
+        <th></th> <!-- This is the th tag with an empty value -->
+        <th>Category</th> <!-- This is the th tag with the text Category -->
+        <th>Descriptions</th> <!-- This is the th tag with the text Descriptions -->
+        <th>Price</th> <!-- This is the th tag with the text Price -->
+        <th>Code</th> <!-- This is the th tag with the text Code -->
+{% for product in products %} <!-- This is the for loop that iterates over the products list -->
+<tr> <!-- This is the opening tr tag -->
+    <td>{{ product['id'] }}</td> <!-- This is the td tag with the value of the id key in the product dictionary -->
+    <td>{{ product['category'] }}</td> <!-- This is the td tag with the value of the category key in the product dictionary -->
+    <td>{{ product['prod_desc'] }}</td> <!-- This is the td tag with the value of the prod_desc key in the product dictionary -->
+    <td>${{ '{:,.0f}'.format(product['price']) }}</td> <!-- This is the td tag with the formatted value of the price key in the product dictionary -->
+    <td>{{ product['code'] }}</td> <!-- This is the td tag with the value of the code key in the product dictionary -->
+</tr> <!-- This is the closing tr tag -->
+{% endfor %} <!-- This is the end of the for loop -->
+</table> <!-- This is the closing table tag -->
+<form action="{{ url_for('root') }}"> <!-- This is the opening form tag with the action attribute set to the URL for the root route -->
+    <button type="submit">Ok</button> <!-- This is the button tag with the type attribute set to submit and the text Ok -->
+</form> <!-- This is the closing form tag -->

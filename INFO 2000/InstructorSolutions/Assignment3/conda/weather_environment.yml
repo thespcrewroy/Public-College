@@ -1,0 +1,10 @@
+name: info2000
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - jupyterlab
+  - seaborn
+  - numpy
+  - matplotlib
+prefix: D:\Miniconda\envs\info2000

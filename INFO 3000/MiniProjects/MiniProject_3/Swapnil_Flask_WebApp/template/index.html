@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Swapnil Roy" />
+    <meta description="This page hosts a classification model" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classifier</title>
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='assets/icon.png')}}"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css')}}"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Swapnil Roy - INFO3000 Classifier</h1>
+      </section>
+
+      <form action="/Prediction" method="post">
+        <div class="post-group">
+          <label for="groupvalue">Group Value (A-C):</label>
+          <select name="groupvalue" id="groupvalue">
+            <option value="">Group Value (A - C):</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+          </select>
+        </div>
+        <div class="post-test">
+          <label for="testvalue">Test Value (-3.00 - 2.00):</label>
+          <input
+            type="number"
+            step="any"
+            name="testvalue"
+            id="testvalue"
+            placeholder="enter test value (-3.00 - 2.00)"
+            min="-3.00"
+            max="2.00"
+          />
+        </div>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+
+      <h3>Prediction: {{prediction}}</h3>
+    </main>
+
+    <br />
+    <hr />
+
+    <footer>
+      <h6>@Copyright INFO3000</h6>
+    </footer>
+  </body>
+</html>

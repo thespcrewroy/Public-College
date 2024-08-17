@@ -1,0 +1,22 @@
+p {
+    margin-bottom: 10px; /* Adds space below the paragraph */
+    font-size: 20px; /* Adjusts the font size of the heading */
+}
+ul {
+    list-style-type: none; /* Removes default bullets */
+    padding: 0; /* Removes default padding */
+}
+li {
+    margin-top: 20px; /* Adds space below the list item */
+    margin-bottom: 20px; /* Adds space below the list item */
+}
+
+form {
+    margin-top: 30px; /* Adds space below the list item */
+    margin-bottom: 20px; /* Adds space below the list item */
+}
+
+button {
+    display: block; /* Makes the button a block element */
+    margin-top: 10px; /* Space above the button */
+}

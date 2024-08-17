@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Swapnil Roy" />
+    <meta description="This page hosts a classification model" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classifier</title>
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='assets/icon.png')}}"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css')}}"
+      type="text/css"
+    />
+  </head>
+  <body
+    class="text-[3.725vw] sm:text-[2.25vw] md:text-[1.75vw] lg:text-[1.17vw] xl:text-[1.17vw] 2xl:text-[1.17vw] leading-relaxed bg-dark-blue text-white font-ibm-plex-mono-light overflow-x-hidden"
+  >
+    <main
+      class="px-[6vw] sm:px-[5vw] lg:px-[4vw] xl:px-[4vw] 2xl:px-[4vw] mx-auto"
+    >
+      <section
+        class="grid grid-cols-1 gap:5 lg:grid-cols-3 lg:gap-[4vw] xl:gap-[3.5vw] 2xl:gap-[4vw] mb-[20vw] sm:mb-[10vw] lg:mb-[6vw]"
+      >
+        <div class="col-span-1">
+          <h1 class="font-ibm-plex-mono-medium-italic sm:mb-[3vw] lg:mb-[2vw]">
+            Swapnil Roy - INFO3000
+          </h1>
+          <h2
+            class="text-[8vw] sm:text-[4.5vw] md:text-[3.5vw] lg:text-[2.85vw] xl:text-[2.85vw] 2xl:text-[2.85vw] mb-[6vw] sm:mb-[3vw] lg:mb-[2vw] lg:pr-4 text-pretty font-angus leading-none tracking-[-0.04rem] text-pretty"
+          >
+            Classifier
+          </h2>
+          <p
+            class="text-off-white max-w-2xl mb-[7vw] sm:mb-[3.75vw] lg:mb-[2.75vw] typing-effect"
+            data-text="We’re building collaborative AI teammates that enable engineering teams to strive for more ambitious goals. We’re the makers of Devin, the first AI software engineer."
+          >
+            A Flask-based Web Application that deploys a predictive
+            classification model that classifies user-inputted parameters as a 1
+            or 0
+          </p>
+        </div>
+      </section>
+
+      <form action="/Prediction" method="post">
+        <label for="testvalue">Test Value:</label>
+        <input
+          type="number"
+          name="testvalue"
+          id=""
+          placeholder="enter test value"
+        />
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+
+      <h3>Prediction: {{prediction}}</h3>
+    </main>
+
+    <hr />
+
+    <footer>
+      <h6>@Copyright INFO3000</h6>
+    </footer>
+  </body>
+</html>

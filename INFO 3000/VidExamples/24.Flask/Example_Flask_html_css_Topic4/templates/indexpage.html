@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpage</title>
+  </head>
+  <body>
+    <header>
+      <h2>Predictive Analysis of machine</h2>
+    </header>
+
+    <form action="/Prediction" method="post">
+      <label for="testvalue">Test Value:</label>
+      <input
+        type="number"
+        name="testvalue"
+        id=""
+        placeholder="enter test value"
+      />
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <br /><br />
+
+    <h3>Prediction: {{prediction}}</h3>
+
+    <footer>
+      <br /><br /><br />
+      <h6>@Copyright INFO3000</h6>
+    </footer>
+  </body>
+</html>
