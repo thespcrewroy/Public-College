@@ -8,6 +8,7 @@
 * ***Software Development (CSCI 1302) (Private)***
 * ***Introduction to Computer Science [(CSCI 2150)](https://github.com/thespcrewroy/Public-College/tree/main/CSCI%202150)***
 * ***Experiental Data Science Specialization - Beginner [(INFO 2000)](https://github.com/thespcrewroy/Public-College/tree/main/INFO%202000)***
+* ***Native App Development in Swift [(NMIX 4030)](https://github.com/thespcrewroy/SwiftUIExercises)***
 ---
 ## Sophomore Year
 * ***Experiental Data Science Specialization - Intermediete [(INFO 3000)](https://github.com/thespcrewroy/Public-College/tree/main/INFO%203000)***
