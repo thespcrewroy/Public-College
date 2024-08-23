@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<!--
+TODO:
+* Develop a Figma prototype of the UI using example websites that I bookmarked and Freecodecamp lesson
+* Look in the website's source code to see how they implemented the UI
+* Add CSS and JavaScript to the project
+* Convert it into a React project built with Vite later
+* Make the banner an ASCII art
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Swapnil Roy" />
+    <meta name="description" content="Landing Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQLRunner</title>
+    <link rel="icon" href="static/assets/images/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <div>
+      <h1>Product Management System</h1>
+      <p><strong>Please select</strong></p>
+      <ul>
+        <li>
+          <a href="{{ url_for('product_data_entry') }}">Product Data Entry</a>
+        </li>
+        <li>
+          <a href="{{ url_for('retrieve_data_from_database') }}"
+            >Retrieve Data From Database</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

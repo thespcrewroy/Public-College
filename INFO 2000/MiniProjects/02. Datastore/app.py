@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for # This will import the Flask class from the flask module
+from flask import send_from_directory # This will import the send_from_directory function from the flask module
 from werkzeug.utils import secure_filename # Import the secure_filename function from the werkzeug.utils module
 from flask_httpauth import HTTPTokenAuth # Import the HTTPTokenAuth module
 from flask_cors import CORS # This will import the CORS class from the flask_cors module
@@ -18,8 +19,17 @@ def connectToDb():
 Instantiate the Flask app
 """
 print(__name__) # print __main__ in the console
-app = Flask(__name__, template_folder='template') # create a Flask object
+app = Flask(__name__) # create a Flask object
 CORS(app) # enable CORS for the app
+
+
+"""
+This function will allow me to serve images from a custom 'assets' directory
+"""
+@app.route('/assets/<path:filename>') # create a route for the app
+def custom_static(filename): # create a function to serve images from the 'assets' directory
+    return send_from_directory('assets', filename) # return the image from the 'assets' directory
+
 
 """
 This function will render the index.html template
