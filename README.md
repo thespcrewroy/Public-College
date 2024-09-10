@@ -13,6 +13,6 @@
 ## Sophomore Year
 * ***Experiental Data Science Specialization - Intermediete [(INFO 3000)](https://github.com/thespcrewroy/Public-College/tree/main/INFO%203000)***
 * ***Systems Programming (CSCI 1730) (Private)***
-* ***Discrete Math for Computer Science (CSCI 2610)***
+* ***Discrete Math for Computer Science [(CSCI 2610)](https://github.com/thespcrewroy/Public-College/tree/main/CSCI%202610)***
 * ***Applied Linear Algebra [(MATH 3300)](https://github.com/thespcrewroy/Public-College/tree/main/MATH%203300)***
 ---
