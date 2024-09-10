@@ -1,0 +1,220 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{\textbf{CSCI 2610 Homework 1}}
+\date{\textbf{September 6th, 2024}}
+\author{by Swapnil Roy}
+
+\begin{document}
+
+\maketitle
+\raggedright
+
+% Main section title
+\section*{Section 1.1}
+
+% Sub-title for Question 10
+\subsection*{Question 10}
+% Answers to Question 10:
+\begin{enumerate}
+    \item[a)] It is not the case that I bought a lottery ticket this week.
+    \item[b)] I bought a lottery ticket this week or I won the million dollar jackpot.
+    \item[c)] If I bought a lottery ticket this week, then I won the million dollar jackpot.
+    \item[d)] I bought a lottery ticket this week and I won the million dollar jackpot.
+    \item[e)] I bought a lottery ticket this week if and only if I won the million dollar jackpot.
+    \item[f)] If it is not the case that I bought a lottery ticket this week, then it is not the case that I won the million dollar jackpot.
+    \item[g)] It is not the case that I bought a lottery ticket this week, and it is not the case that I won the million-dollar jackpot.
+    \item[h)] It is not the case that I bought a lottery ticket this week, or I bought a lottery ticket this week and won the million-dollar jackpot.
+\end{enumerate}
+
+% Sub-title for Question 18
+\subsection*{Question 18}
+% Answers to Question 18:
+\begin{enumerate}
+    \item[a)] True.
+    \item[b)] False.
+    \item[c)] True.
+    \item[d)] False.
+\end{enumerate}
+
+% Sub-title below Section 1.1
+\subsection*{Question 40}
+% Truth table for ((p → q) → r) → s:
+\[
+\begin{array}{|c|c|c|c|c|c|c|}
+\hline
+p & q & r & s & p \to q & (p \to q) \to r & ((p \to q) \to r) \to s \\
+\hline
+T & T & T & T & T & T & T \\
+T & T & T & F & T & T & F \\
+T & T & F & T & T & F & T \\
+T & T & F & F & T & F & T \\
+T & F & T & T & F & T & T \\
+T & F & T & F & F & T & F \\
+T & F & F & T & F & T & T \\
+T & F & F & F & F & T & F \\
+F & T & T & T & T & T & T \\
+F & T & T & F & T & T & F \\
+F & T & F & T & T & F & T \\
+F & T & F & F & T & F & T \\
+F & F & T & T & T & T & T \\
+F & F & T & F & T & T & F \\
+F & F & F & T & T & F & T \\
+F & F & F & F & T & F & T \\
+\hline
+\end{array}
+\]\newline
+
+
+% Main section title
+\section*{Section 1.2}
+
+% Sub-title below Section 1.2
+\subsection*{Question 6}
+
+Answer:
+\[
+u \to \left( (b_{32} \land g_1 \land r_1 \land h_{16}) \lor (b_{64} \land g_2 \land r_2 \land h_{32}) \right)
+\]
+
+Where:
+\begin{itemize}
+    \item \( u \): "You can upgrade your operating system."
+    \item \( b_{32} \): "You have a 32-bit processor."
+    \item \( b_{64} \): "You have a 64-bit processor."
+    \item \( g_1 \): "Your processor runs at 1 GHz or faster."
+    \item \( g_2 \): "Your processor runs at 2 GHz or faster."
+    \item \( r_1 \): "Your processor has at least 1 GB RAM."
+    \item \( r_2 \): "Your processor has at least 2 GB RAM."
+    \item \( h_{16} \): "You have at least 16 GB free hard disk space."
+    \item \( h_{32} \): "You have at least 32 GB free hard disk space."
+\end{itemize}
+
+% Sub-title below Section 1.2
+\subsection*{Question 12}
+Answer: Let \( l \) denote "The file system is locked." Let \( q \) denote "New messages will be queued." Let \( f \) denote "The system is functioning normally." Let \( b \) denote "New messages will be sent to the message buffer." The specification can be written as:
+\[
+\neg l \to q, \quad \neg l \leftrightarrow f, \quad \neg q \to b, \quad \neg l \to b, \quad \neg b
+\]
+When \( f \) is false, \( b \) is false, \( q \) is true, and \( l \) is true, all 5 statements are true. So the specification is consistent.
+
+% Sub-title below Section 1.2
+\subsection*{Question 44}
+
+a) The output of the first circuit is:
+\[
+\neg p \lor \neg q
+\]
+
+b) The output of the second circuit is:
+\[
+\neg (p \lor (\neg p \land q))
+\]
+
+% Main section title
+\section*{Section 1.3}
+
+% Sub-title below Section 1.3
+\subsection*{Question 10}
+
+\begin{enumerate}
+    \item[a)] \( p \lor \neg q \)
+    \item[b)] \( \neg p \lor \neg q \)
+    \item[c)] \( p \lor q \)
+\end{enumerate}
+
+% Sub-title below Section 1.3
+\subsection*{Question 16}
+
+a) \begin{enumerate}
+    \item[1)] \( \neg [\neg p \land (p \lor q)] \lor q \) \hfill | Definition of Implication
+    \item[2)] \( [p \lor \neg (p \lor q)] \lor q \) \hfill | De Morgan's 1st Law
+    \item[3)] \( [p \lor (\neg p \land \neg q)] \lor q \) \hfill | De Morgan's 2nd Law
+    \item[4)] \( [(p \lor \neg p) \land (p \lor \neg q)] \lor q \) \hfill | Distributive
+    \item[5)] \( [T \land (p \lor \neg q)] \lor q \) \hfill | Negation
+    \item[6)] \( [(p \lor \neg q)] \lor q \) \hfill | Identity
+    \item[7)] \( p \lor (\neg q \lor q )\) \hfill | Associative
+    \item[8)] \( p \lor T \) \hfill | Negation
+    \item[8)] \(Tautology\) \hfill | Domination
+\end{enumerate}
+
+b) \begin{enumerate}
+    \item[1)] \( [(\neg p \lor q) \land (\neg q \lor r)] \to (\neg p \lor r) \) \hfill | Definition of Implication
+    \item[2)] \( \neg [(\neg p \lor q) \land (\neg q \lor r)] \lor (\neg p \lor r) \) \hfill | Definition of Implication
+    \item[3)] \( [\neg(\neg p \lor q) \lor \neg(\neg q \lor r)] \lor (\neg p \lor r) \) \hfill | De Morgan 1st Law
+    \item[4)] \( [(p \land \neg q) \lor (q \land \neg r)] \lor (\neg p \lor r) \) \hfill | De Morgan 2nd Law
+    \item[5)] \(  (p \lor \neg p) \land (\neg q \lor r)\) \hfill | Distributive Property
+    \item[6)] \(  T \lor (\neg q \lor r)\) \hfill | Negation
+    \item[7)] \( Tautology \) \hfill | Domination
+\end{enumerate}
+
+c)  \begin{enumerate}
+    \item[1)] \( [p \land (\neg p \lor q)] \to q \) \hfill | Definition of Implication
+    \item[2)] \( [(p \land \neg p) \lor (p \land q)] \to q\) \hfill | Distributive Property
+    \item[3)] \( [F \lor (p \land q)] \to q\) \hfill | Negation
+    \item[4)] \((p \land q) \to q\) \hfill | Identity
+    \item[5)] \( \neg (p \land q) \lor q\) \hfill | Definition of Implication
+    \item[6)] \( (\neg p \lor \neg q) \lor q\) \hfill | De Morgan 1st Law
+    \item[7)] \( \neg p \lor (\neg q \lor q) \) \hfill | Associative Law
+    \item[8)] \( \neg p \lor T \) \hfill | Negation
+    \item[9)] \( Tautology \) \hfill | Domination
+\end{enumerate}
+
+d) \begin{enumerate}
+    \item[1)] \(  [(p \lor q) \land (\neg p \lor r) \land (\neg q \lor r)] \to r\) \hfill | Definition of Implication
+    \item[2)] \( \neg [(p \lor q) \land (\neg p \lor r) \land (\neg q \lor r)] \lor r \) \hfill | Definition of Implication
+    \item[3)] \( [\neg (p \lor q) \lor \neg (\neg p \lor r) \lor \neg (\neg q \lor r)] \lor r \) \hfill | De Morgan 1st Law
+    \item[4)] \( [(\neg p \land \neg q) \lor (p \land \neg r) \lor (q \land \neg r)] \lor r \) \hfill | De Morgan 2nd Law
+    \item[5)] Tautology \hfill | Disjunctive Normal Form
+
+\end{enumerate}
+
+% Sub-title below Section 1.3
+\subsection*{Question 36}
+
+\noindent
+We will evaluate the case where \( p = \text{false}, q = \text{true}, r = \text{false} \).
+
+\noindent
+\begin{minipage}{0.45\textwidth}
+\raggedright
+\( (p \land q) \to r \)
+\[
+(\text{F} \land \text{T}) \to \text{F}
+\]
+\[
+\text{F} \to \text{F}
+\]
+\[
+\text{T}
+\]
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+\raggedright
+\( (p \to r) \land (q \to r) \)
+\[
+(\text{F} \to \text{F})  \land (\text{T} \to \text{F}) 
+\]
+\[
+\text{T} \land \text{F}
+\]
+\[
+\text{F}
+\]
+\end{minipage}
+
+\vspace{10pt}
+\noindent
+\[
+T \neq F
+\]
+Thus, the propositions are not logically equivalent.
+
+% Sub-title below Section 1.3
+\subsection*{Question 66}
+
+a) Satisfiable. Assign T to p and F to q, r, s.\newline
+b) Satisfiable. Assign T to p,r and F to q, s.\newline
+c) Satisfiable. Assign T to s and F to p, q, r.
+\end{document}
