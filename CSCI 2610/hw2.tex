@@ -1,0 +1,184 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{\textbf{CSCI 2610 Homework 2}}
+\date{\textbf{September 20th, 2024}}
+\author{by Swapnil Roy}
+
+\begin{document}
+
+\maketitle
+\raggedright
+
+% Main section title
+\section*{Section 1.4}
+
+% Sub-title for Question 10
+\subsection*{Question 10}
+% Answers to Question 10:
+\begin{enumerate}
+    \item[(a)] \(\exists x (C(x) \land D(x) \land F(x))\)
+    \item[(b)] \(\forall x (C(x) \lor D(x) \lor F(x))\)
+    \item[(c)] \(\exists x (C(x) \land F(x) \land \neg D(x))\)
+    \item[(d)] \(\forall x (\neg C(x) \lor \neg D(x) \lor \neg F(x))\)
+    \item[(e)] \(\exists x C(x) \land \exists x D(x) \land \exists x F(x)\)
+\end{enumerate}
+
+% Sub-title for Question 28
+\subsection*{Question 28}
+% Answers to Question 28:
+Let:
+\begin{itemize}
+    \item \(x\) is "everything"
+    \item \(T(x)\) is "x is a tool"
+    \item \(P(x)\) is "x is in the correct place"
+    \item \(C(x)\) is "x is in excellent condition"
+\end{itemize}
+
+The logical expressions are as follows:
+\begin{itemize}
+    \item[(a)] \(\exists x (\neg P(x))\)
+    \item[(b)] \(\forall x (T(x) \rightarrow (P(x) \land C(x)))\)
+    \item[(c)] \(\forall x (P(x) \land C(x))\)
+    \item[(d)] \(\forall x (\neg P(x) \lor \neg C(x))\)
+    \item[(e)] \(\exists x (T(x) \land \neg P(x) \land C(x))\)
+\end{itemize}
+
+% Sub-title for Question 36
+\subsection*{Question 36}
+% Answers to Question 36:
+\begin{itemize}
+    \item[(a)] \(\exists x (x \leq -2 \lor x \geq 3)\)
+    \item[(b)] \(\exists x (x < 0 \lor x \geq 5)\)
+    \item[(c)] \(\forall x (x < -4 \lor x > 1)\)
+    \item[(d)] \(\forall x (x \leq -5 \lor x \geq -1)\)
+\end{itemize}
+
+
+% Main section title
+\section*{Section 1.5}
+
+% Sub-title for Question 8
+\subsection*{Question 8}
+
+\begin{itemize}
+    \item[(a)] \(\exists x \exists y \ Q(x, y)\)
+    \item[(b)] \(\forall x \forall y \ \neg Q(x, y)\)
+    \item[(c)] \(\exists x \ (Q(x, \text{Jeopardy!}) \land Q(x, \text{Wheel of Fortune}))\)
+    \item[(d)] \(\forall y \ \exists x \ Q(x, y)\)
+    \item[(e)] \(\exists x_1 \exists x_2 \ (Q(x_1, \text{Jeopardy!}) \land Q(x_2, \text{Jeopardy!}) \land (x_1 \neq x_2))\)
+\end{itemize}
+
+% Sub-title for Question 28
+\subsection*{Question 28}
+\begin{itemize}
+    \item[(a)] True
+    \item[(b)] False
+    \item[(c)] True
+    \item[(d)] False
+    \item[(e)] True
+    \item[(f)] False
+    \item[(g)] True
+    \item[(h)] False
+    \item[(i)] True
+    \item[(j)] True
+\end{itemize}
+
+% Sub-title for Question 30
+\subsection*{Question 30}
+\begin{itemize}
+    \item[(a)] \(\forall y \forall x \neg P(x, y)\)
+    \item[(b)] \(\exists x \forall y \neg P(x, y)\)
+    \item[(c)] \(\forall y (\neg Q(y) \lor \exists x R(x, y))\)
+    \item[(d)] \(\forall y (\forall x \neg R(x, y) \land \exists x \neg S(x, y))\)
+    \item[(e)] \(\forall y (\exists x \forall z \neg T(x, y, z) \land \forall x \exists z \neg U(x, y, z))\)
+\end{itemize}
+
+% Main section title
+\section*{Section 1.6}
+
+% Sub-title for Question 4
+\subsection*{Question 4}
+\begin{itemize}
+    \item[(a)] \textit{Simplification}\\
+    \item[(b)] \textit{Disjunctive Syllogism}\\
+    \item[(c)] \textit{Modus Ponens}\\
+    \item[(d)] \textit{Addition}\\
+    \item[(e)] \textit{Hypothetical Syllogism}\\
+\end{itemize}
+
+% Sub-title for Question 10
+\subsection*{Question 10.a}
+\begin{itemize}
+    \item[1.] \( w \rightarrow (s \lor p) \) \hfill \textit{Premise}
+    \item[2.] \( \neg w \) \hfill \textit{Premise}
+    \item[3.] \( \neg s \) \hfill \textit{Modus Tollens (1 \& 2)}
+    \item[4.] \( h \rightarrow s \) \hfill \textit{Premise}
+    \item[5.] \( \neg h \) \hfill \textit{Modus Tollens (4 \& 3)}
+\end{itemize}
+\subsection*{Question 10.b}
+\begin{itemize}
+    \item[1.] \( W(x) \rightarrow (S(x) \lor P(x)) \) \hfill \textit{Premise}
+    \item[2.] \( W(M) \lor W(F) \) \hfill \textit{Premise}
+    \item[3.] \( \neg S(T) \) \hfill \textit{Premise}
+    \item[4.] \( \neg P(F) \) \hfill \textit{Premise}
+    \item[5.] \( W(F) \rightarrow (S(F) \lor P(F)) \) \hfill \textit{From Premise 1 for \( F \)}
+    \item[6.] \( S(F) \) \hfill \textit{Modus Tollens (4 \& 5)}
+    \item[7.] \( W(M) \) \hfill \textit{Disjunctive Syllogism (2 \& 4)}
+    \item[8.] \( W(M) \rightarrow (S(M) \lor P(M)) \) \hfill \textit{From Premise 1 for \( M \)}
+    \item[9.] \(W(M) \land (P(M) \lor S(M)) \) \hfill \textit{Conclusion}
+\end{itemize}
+\subsection*{Question 10.c}
+\begin{itemize}
+    \item[1.] \( \forall x (I(x) \rightarrow L(x)) \) \hfill \textit{Premise}
+    \item[2.] \( I(d) \) \hfill \textit{Premise}
+    \item[3.] \( \neg L(s) \) \hfill \textit{Premise}
+    \item[4.] \( E(s, d) \) \hfill \textit{Premise}
+    \item[5.] \( I(s) \rightarrow L(s) \) \hfill \textit{Universal Instantiation (1)}
+    \item[6.] \( L(d) \) \hfill \textit{Modus Ponens (2 \& 5)}
+    \item[7.] \( \neg I(s) \) \hfill \textit{Modus Tollens (3 \& 6)}
+\end{itemize}
+
+\subsection*{Question 16.a}
+\begin{itemize}
+    \item[1.] \( \forall x (E(x) \rightarrow D(x)) \) \hfill \textit{Premise}
+    \item[2.] \( \neg D(Mia) \) \hfill \textit{Premise}
+    \item[3.] \( \neg E(Mia) \) \hfill \textit{Modus Tollens (1 \& 2)}
+\end{itemize}
+\textbf{Conclusion: Correct. Mia is not enrolled in the university.}
+
+\subsection*{Question 16.b}
+\begin{itemize}
+    \item[1.] \( C(x) \rightarrow F(x) \) \hfill \textit{Premise}
+    \item[2.] \( \neg C(Isaac's\,car) \) \hfill \textit{Premise}
+    \item[3.] \textit{Logical Fallacy}
+\end{itemize}
+\textbf{Conclusion: Incorrect. The fact that Isaac's car is not a convertible does not imply it is not fun to drive.}
+
+\subsection*{Question 16.c}
+\begin{itemize}
+    \item[1.] \( Q \rightarrow A(x) \) \hfill \textit{Premise}
+    \item[2.] \( Q \rightarrow L(Eight\,Men\,Out) \) \hfill \textit{Premise}
+    \item[3.] \textit{Logical Fallacy}
+\end{itemize}
+\textbf{Conclusion: Incorrect. Liking the movie does not necessarily mean it is an action movie.}
+
+\subsection*{Question 16.d}
+\begin{itemize}
+    \item[1.] \( \forall x (L(x) \rightarrow T(x)) \) \hfill \textit{Premise}
+    \item[2.] \( L(Hamilton) \) \hfill \textit{Premise}
+    \item[3.] \( T(Hamilton) \) \hfill \textit{Universal Instantiation (1 \& 2)}
+\end{itemize}
+\textbf{Conclusion: Correct. Hamilton sets at least a dozen traps.}
+
+\subsection*{Question 28}
+\begin{itemize}
+    \item[1.] \( \forall x (P(x) \lor Q(x)) \) \hfill \textit{Premise 1}
+    \item[2.] \( \forall x ((\neg P(x) \land Q(x)) \rightarrow R(x)) \) \hfill \textit{Premise 2}
+    \item[3.] \( (P(T) \lor Q(T)) \) \hfill \textit{UI (1)}
+    \item[4.] \( ((\neg P(T) \land Q(T)) \rightarrow R(T)) \) \hfill \textit{UI (2)}
+    \item[5.] \( \neg R(T) \rightarrow (P(T) \lor \neg Q(T)) \) \hfill \textit{Contrapositive (4)}
+    \item[6.] \( \neg R(x) \rightarrow P(x) \) \hfill \textit{Disjunction (3 \& 5)}
+    \item[7.] \( \forall x (\neg R(x) \rightarrow P(x)) \) \hfill \textit{UG (6)}
+\end{itemize}
+\end{document}
