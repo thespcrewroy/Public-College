@@ -1,0 +1,182 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{\textbf{CSCI 2610 Homework 3}}
+\date{\textbf{October 4th, 2024}}
+\author{by Swapnil Roy}
+
+\begin{document}
+
+\maketitle
+\raggedright
+
+% Main section title
+\section*{Section 2.1}
+
+% Sub-title for Question 10
+\subsection*{Question 10}
+% Answers to Question 10:
+\begin{itemize}
+    \item[(a)] No
+    \item[(b)] No
+    \item[(c)] Yes
+    \item[(d)] Yes
+    \item[(e)] Yes
+    \item[(f)] No
+\end{itemize}
+
+% Sub-title for Question 12
+\subsection*{Question 12}
+% Answers to Question 12:
+\begin{itemize}
+    \item[(a)] True
+    \item[(b)] True
+    \item[(c)] False
+    \item[(d)] True
+    \item[(e)] True
+    \item[(f)] False
+    \item[(g)] False
+\end{itemize}
+
+% Sub-title for Question 20
+\subsection*{Question 20}
+% Answers to Question 20
+ANS) \( A = \emptyset \) and \( B = \{\emptyset\} \).
+
+
+% Sub-title for Question 26
+\subsection*{Question 26}
+% Answers to Question 26
+\begin{itemize}
+    \item[(a)] No
+    \item[(b)] Yes
+    \item[(c)] No
+    \item[(d)] Yes
+\end{itemize}
+
+
+% Sub-title for Question 34
+\subsection*{Question 34}
+% Answers to Question 34
+\begin{itemize}
+    \item[(a)] \( A \times B \times C = \)
+    \[
+    \begin{aligned}
+    \{ (a, x, 0), & (a, x, 1), (a, y, 0), (a, y, 1), \\
+    (b, x, 0), & (b, x, 1), (b, y, 0), (b, y, 1), \\
+    (c, x, 0), & (c, x, 1), (c, y, 0), (c, y, 1) \}
+    \end{aligned}
+    \]
+    
+    \item[(b)] \( C \times B \times A = \)
+    \[
+    \begin{aligned}
+    \{ (0, x, a), & (0, x, b), (0, x, c), (0, y, a), (0, y, b), (0, y, c), \\
+    (1, x, a), & (1, x, b), (1, x, c), (1, y, a), (1, y, b), (1, y, c) \}
+    \end{aligned}
+    \]
+    
+    \item[(c)] \( C \times A \times B = \)
+    \[
+    \begin{aligned}
+    \{ (0, a, x), & (0, a, y), (0, b, x), (0, b, y), (0, c, x), (0, c, y), \\
+    (1, a, x), & (1, a, y), (1, b, x), (1, b, y), (1, c, x), (1, c, y) \}
+    \end{aligned}
+    \]
+    
+    \item[(d)] \( B \times B \times B = \)
+    \[
+    \begin{aligned}
+    \{ (x, x, x), & (x, x, y), (x, y, x), (x, y, y), \\
+    (y, x, x), & (y, x, y), (y, y, x), (y, y, y) \}
+    \end{aligned}
+    \]
+\end{itemize}
+
+% Main section title
+\section*{Section 2.2}
+% Sub-title for Question 4
+\subsection*{Question 4}
+% Answers to Question 4:
+\begin{itemize}
+    \item[(a)] $\{a, b, c, d, e, f, g, h\}$
+    \item[(b)] $\{a, b, c, d, e\}$
+    \item[(c)] $\emptyset$
+    \item[(d)] $\{f, g, h\}$
+\end{itemize}
+
+% Sub-title for Question (a)
+\subsection*{Question 8.a}
+To prove it, we need to prove $A \cup A \subseteq A$ and $A \subseteq A \cup A$.
+
+\textbf{Proof: $A \cup A \subseteq A$.}
+\begin{itemize}
+    \item[1.] \( x \in A \cup A \) \hfill \textit{Assumption}
+    \item[2.] \( x \in A \lor x \in A \) \hfill \textit{Definition of Union}
+    \item[3.] \( x \in A \) \hfill \textit{Idempotent Law of Propositions}
+    \item[4.] Therefore, $A \cup A \subseteq A$
+\end{itemize}
+
+\textbf{Proof: $A \subseteq A \cup A$.}
+\begin{itemize}
+    \item[1.] \( x \in A \) \hfill \textit{Assumption}
+    \item[2.] \( x \in A \lor x \in A \) \hfill \textit{Definition of Union}
+    \item[3.] \( x \in A \cup A \) \hfill \textit{Definition of Union}
+    \item[4.] Therefore, $A \subseteq A \cup A$
+\end{itemize}
+
+\textbf{Since $A \cup A \subseteq A$ and $A \subseteq A \cup A$, $A \cup A = A$ is true.}
+
+% Sub-title for Question (b)
+\subsection*{Question 8.b}
+To prove it, we need to prove $A \cap A \subseteq A$ and $A \subseteq A \cap A$.
+
+\textbf{Proof: $A \cap A \subseteq A$.}
+\begin{itemize}
+    \item[1.] \( x \in A \cap A \) \hfill \textit{Assumption}
+    \item[2.] \( x \in A \land x \in A \) \hfill \textit{Definition of Intersection}
+    \item[3.] \( x \in A \) \hfill \textit{Idempotent Law of Propositions}
+    \item[4.] Therefore, $A \cap A \subseteq A$
+\end{itemize}
+
+\textbf{Proof: $A \subseteq A \cap A$.}
+\begin{itemize}
+    \item[1.] \( x \in A \) \hfill \textit{Assumption}
+    \item[2.] \( x \in A \land x \in A \) \hfill \textit{Definition of Intersection}
+    \item[3.] \( x \in A \cap A \) \hfill \textit{Definition of Intersection}
+    \item[4.] Therefore, $A \subseteq A \cap A$
+\end{itemize}
+
+\textbf{Since $A \cap A \subseteq A$ and $A \subseteq A \cap A$, $A \cap A = A$ is true.}
+
+% Sub-title for Question 14
+\subsection*{Question 14}
+\begin{itemize}
+    \item[] \( A = \{1, 3, 5, 6, 7, 8, 9\} \)
+    \item[] \( B = \{2, 3, 6, 9, 10\} \)
+\end{itemize}
+
+% Sub-title for Question 34
+\subsection*{Question 34}
+\begin{itemize}
+    \item[1.] \( (A - B) \cap (B - C) \cap (A - C) \) \hfill \textit{Given}
+    \item[2.] \( (A - B) \cap (B - C) \cap (A - C) \) \hfill \textit{Definition of Set Difference}
+    \item[3.] \((A \cap \overline{B}) \cap (B \cap \overline{C}) \cap (A \cap \overline{C}) \) \hfill \textit{Associative Law}
+    \item[4.] \( = A \cap \overline{B} \cap B \cap \overline{C} \cap A \cap \overline{C} \) \hfill \textit{Complement Law \#2}
+    \item[5.] \( = \emptyset \) \hfill \textit{Domination Law \#2}
+\end{itemize}
+
+\text{Therefore, \( (A - B) \cap (B - C) \cap (A - C) = \emptyset \) is true}
+
+% Sub-title for Question 54
+\subsection*{Question 54.a}
+\[
+\bigcup_{i=1}^n A_i = \bigcup_{i=1}^n \{\ldots, -2, -1, 0, 1, \ldots, i\} = \mathbb{Z}
+\]
+
+\subsection*{Question 54.b}
+\[
+\bigcap_{i=1}^n A_i = \bigcap_{i=1}^n \{\ldots, -2, -1, 0, 1, \ldots, i\} = \{\ldots, -2, -1, 0\}
+\]
+\end{document}
