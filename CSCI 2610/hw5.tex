@@ -1,0 +1,144 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\title{\textbf{CSCI 2610 Homework 5}}
+\date{\textbf{November 4th, 2024}}
+\author{by Swapnil Roy}
+
+\begin{document}
+
+\maketitle
+\raggedright
+
+% Main section title
+\section*{Section 12.4}
+
+% Sub-title for Question 14
+\subsection*{Question 14}
+\begin{itemize}
+        \item[(a)]$w\overline{x}y\overline{z} + wxz + wx\overline{y} + w\overline{y}z$
+        \item[(b)] $wxy\overline{z} + wx\overline{y}z + w\overline{x}yz + \overline{w}\,\overline{x}y\overline{z} + \overline{w}\,\overline{y}z$
+        \item[(c)] $\overline{w}\,\overline{x}y\overline{z} + wxy + \overline{y}z + w\overline{x}\,\overline{y}$
+        \item[(d)] $wxz + wxy + yz + \overline{w}\,\overline{x}z + \overline{x}y\overline{z}$
+\end{itemize}
+
+% Sub-title for Question 32
+\subsection*{Question 32}
+    $w\overline{y} + \overline{w}x$
+
+% Main section title
+\section*{Section 3.2}
+
+% Sub-title for Question 18
+\subsection*{Question 18}
+\begin{itemize}
+    \item[(1)] \( 1^k + 2^k + \ldots + n^k \leq n^k + n + \ldots + n \quad (\text{there are } n \text{ terms}) \)
+    \item[(2)] \( 1^k + 2^k + \ldots + n^k \leq n^k \cdot n = n^{k+1} \)
+    \item[(3)] \( 1^k + 2^k + \ldots + n^k \leq n^{k+1} \)
+    \item[(4)] \( 1^k + 2^k + \ldots + n^k \text{ is } O(n^{k+1}) \text{ taking } C = 1, k = 1 \)
+\end{itemize}
+
+% Sub-title for Question 26
+\subsection*{Question 26}
+\begin{itemize}
+    \item[(a)] $O(n^3 \log n)$
+    \item[(b)] $O(6^n)$
+    \item[(c)] $O(n^n \cdot n!)$
+\end{itemize}
+
+% Main section title
+\section*{Section 4.2}
+% Sub-title for Question 6
+\subsection*{Question 6}
+\begin{itemize}
+    \item[(a)] $(1111 \, 0111)_2 = (367)_8$
+    \item[(b)] $(1010 \, 1010 \, 1010)_2 = (5252)_8$
+    \item[(c)] $(111 \, 0111 \, 0111 \, 0111)_2 = (73567)_8$
+    \item[(d)] $(101 \, 0101 \, 0101 \, 0101)_2 = (52525)_8$
+\end{itemize}
+
+% Sub-title for Question 10
+\subsection*{Question 10}
+\begin{itemize}
+    \item[(a)] $(F7)_{16}$
+    \item[(b)] $(AAA)_{16}$
+    \item[(c)] $(7777)_{16}$
+    \item[(d)] $(5555)_{16}$
+\end{itemize}
+
+% Main section title
+\section*{Section 5.1}
+
+% Sub-title for Question 4
+\subsection*{Question 4}
+\begin{itemize}
+    \item[(a)] \( P(1) = 1^3 + 2^3 + \dots + 1^3 = \left( \frac{1(1 + 1)}{2} \right)^2 \)
+    \item[(b)] \textbf{Basis:} \( P(1) \) is true because:
+    \begin{enumerate}
+        \item \( 1^3 = \left( \frac{1(1 + 1)}{2} \right)^2 \)
+        \item \( 1 = 1^2 \)
+        \item \( 1 = 1 \)
+    \end{enumerate}
+\end{itemize}
+
+% Sub-title for Question 18
+\subsection*{Question 18}
+\begin{itemize}
+    \item[(a)] \( P(2) = 2! < 2^2 \)
+    \item[(b)] \textbf{BASIS:} \( P(2) \) holds true because:
+    \begin{enumerate}
+        \item \( 2! = 2^2 \)
+        \item \( 2 < 4 \)
+    \end{enumerate}
+    \item[(c)] \textbf{Inductive Hypothesis:} \( k! < k^k \)
+    \item[(d)] \textbf{Inductive Step:} Assume \( P(k) \) holds, i.e., \( k! < k^k \), for an arbitrary \( k \) greater than 1. Must show that \( P(k + 1) \) holds as well.
+    \item[(e)] \( (k + 1)! \)
+    \begin{enumerate}
+        \item \( = (k + 1)(k!) \)
+        \item \( < (k + 1)(k^k) \) \hspace{10pt} (by the inductive hypothesis)
+        \item \( < (k + 1)(k + 1)^k \)
+        \item \( < (k + 1)^{k + 1} \)
+        \item \( (k + 1)! < (k + 1)^{k + 1} \)
+    \end{enumerate}
+    \item[(f)] We have shown that \( P(k + 1) \) holds, proving the statement \( n! < n^n \) for every integer \( n \geq 2 \).
+\end{itemize}
+
+% Sub-title for Question 28
+\subsection*{Question 28}
+\begin{itemize}
+    \item[1)] Let \( P(n) \) be the proposition "\( n^2 - 7n + 12 \) is non-negative."
+    \item[2)] \textbf{Basis:} \( P(3) \) holds true as \( 3^2 - 7(3) + 12 = 0 \geq 0 \).
+    \item[3)] \textbf{Inductive Hypothesis:} \( k^2 - 7k + 12 \) is non-negative.
+    \item[4)] \textbf{Inductive Step:} Assume \( P(k) \) holds, i.e., \( k^2 - 7k + 12 \) is non-negative, for an arbitrary integer \( k \geq 3 \).
+    \item[5)] Must show that \( P(k + 1) \) holds as well:
+    \begin{enumerate}
+        \item[(a)] \( (k + 1)^2 - 7(k + 1) + 12 \)
+        \item[(b)] \( = (k + 1 - 4)(k + 1 - 3) \)
+        \item[(c)] \( = (k - 3)(k - 2) \)
+        \item[(d)] The inductive hypothesis states that \( k^2 - 7k + 12 \), which can be factored into \( (k - 3)(k - 2) \), is non-negative for an arbitrary integer \( k \geq 3 \). Thus, by the inductive hypothesis, \( (k + 1)^2 - 7(k + 1) + 12 \) is also non-negative for an arbitrary integer \( k \geq 3 \), as it factors to \( (k - 3)(k - 2) \) as well.
+    \end{enumerate}
+    \item[6)] Since \( P(k + 1) \) holds, therefore, \( n^2 - 7n + 12 \) is non-negative if \( n \geq 3 \).
+\end{itemize}
+
+% Sub-title for Question 32
+\subsection*{Question 32}
+\begin{itemize}
+    \item[1)] Let \( P(n) \) be the proposition "\( 3 \) divides \( n^3 + 2n \)".
+    \item[2)] \textbf{Basis:} \( P(1) \) is true since \( 1^3 + 2(1) = 3 \), and \( 3 \) is divisible by \( 3 \).
+    \item[3)] \textbf{Inductive Hypothesis:} \( 3 \) divides \( k^3 + 2k \).
+    \item[4)] \textbf{Inductive Step:} Assume \( P(k) \) holds, i.e., \( 3 \) divides \( k^3 + 2k \), for an arbitrary positive integer \( k \).
+    \item[5)] Must show \( P(k + 1) \) holds as well:
+    \begin{enumerate}
+        \item[(a)] \( (k + 1)^3 + 2(k + 1) \)
+        \item[(b)] \( = k^3 + 3k^2 + 3k + 1 + 2k + 2 \)
+        \item[(c)] \( = k^3 + 3k^2 + 3k + 3 + 2k \)
+        \item[(d)] \( = (k^3 + 2k) + 3(k^2 + k + 1) \)
+        \item[(e)] By the inductive hypothesis, \( 3 \) divides the first term \( (k^3 + 2k) \). \( 3 \) also divides the second term because \( k^2 + k + 1 \) is an integer multiplied by \( 3 \). Thus, the sum of the two terms must also be divisible by \( 3 \).
+    \end{enumerate}
+    \item[6)] Since \( P(k + 1) \) holds, therefore, \( 3 \) divides \( n^3 + 2n \) whenever \( n \) is a positive integer.
+\end{itemize}
+
+\end{document}
