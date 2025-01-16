@@ -1,0 +1,142 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\title{\textbf{CSCI 2610 Homework 6}}
+\date{\textbf{November 22nd, 2024}}
+\author{by Swapnil Roy}
+
+\begin{document}
+
+\maketitle
+\raggedright
+
+% Main section title
+\section*{Section 5.3}
+% Sub-title for Question 8
+\subsection*{Question 8}
+\begin{itemize}
+    \item[(a)] 
+    \begin{itemize}
+        \item[Basis:] $a_1 = 2$
+        \item[Recursive:] $a_n = a_{n-1} + 4$
+    \end{itemize}
+    
+    \item[] % This adds a newline between items
+    \item[(b)] 
+    \begin{itemize}
+        \item[Basis:] $a_1 = 0$
+        \item[Recursive:] $a_n = a_{n-1} + (-1)^n - (-1)^{n-1}$
+    \end{itemize}
+    
+    \item[] % This adds a newline between items
+    \item[(c)] 
+    \begin{itemize}
+        \item[Basis:] $a_1 = 2$
+        \item[Recursive:] $a_n = a_{n-1} + 2n$
+    \end{itemize}
+    
+    \item[] % This adds a newline between items
+    \item[(d)] 
+    \begin{itemize}
+        \item[Basis:] $a_1 = 1$
+        \item[Recursive:] $a_n = a_{n-1} + 2n - 1$
+    \end{itemize}
+\end{itemize}
+
+% Main section title
+\section*{Section 6.1}
+% Sub-title for Question 18
+\subsection*{Question 18}
+\begin{itemize}
+    \item[$(a)$] $256$
+    
+    \item[$(b)$] $64$
+    
+    \item[$(c)$] $32$
+    
+    \item[$(d)$] $243$
+\end{itemize}
+% Sub-title for Question 26
+\subsection*{Question 26}
+\begin{itemize}
+    \item[$(a)$] $5040$
+    
+    \item[$(b)$] $5000$
+    
+    \item[$(c)$] $36$
+\end{itemize}
+
+% Main section title
+\section*{Section 6.2}
+% Sub-title for Question 18
+\subsection*{Question 18}
+    \begin{itemize}
+        \item Pairs that add up to 16: (1, 15), (3, 13), (5, 11), (7, 9)
+        \item These pairs are the "boxes" in the pigeonhole principle (k = 4).
+        \item To avoid selecting a pair that adds up to 16, we can select at most one number from each pair. The maximum number of numbers we can select without selecting both elements from any pair is 'k' where k = 4.
+        \item If we select 'k + 1' numbers, by the Pigeonhole Principle we are guaranteed to select both elements of at least one pair, ensuring that their sum is 16.
+    \end{itemize}
+    Answer: 5
+
+% Main section title
+\section*{Section 6.3}
+% Sub-title for Question 12
+\subsection*{Question 12}
+\begin{itemize}
+    \item[(a)] \( C(12, 3) = 220 \)
+    \item[(b)] \( C(12, 0) + C(12, 1) + C(12, 2) + C(12, 3) = 299 \)
+    \item[(c)] \( 2^{12} - (C(12, 0) + C(12, 1) + C(12, 2)) = 4017 \)
+    \item[(d)] \( C(12, 6) = 924 \)
+\end{itemize}
+
+% Sub-title for Question 38
+\subsection*{Question 38}
+\( \binom{9}{5} = 126 \)
+
+% Main section title
+\section*{Section 7.1}
+% Sub-title for Question 16
+\subsection*{Question 16}
+\text{1. Possible five-card poker hands: } \( C(52, 5) = 2,598,960 \) \\
+\text{2. The number of flushes: } \( 4 \times C(13, 5) = 5,148 \) \\
+\text{3. }\( P(\text{Flush}) = \frac{5,148}{2,598,960}\) \\
+
+% Sub-title for Question 36
+\subsection*{Question 36}
+\[
+p(\text{Sum} = 8 \mid \text{Two Dice}) = \frac{5}{36}  \approx 0.1389
+\]
+\[
+p(\text{Sum} = 8 \mid \text{Three Dice}) = \frac{21}{216} \approx 0.0972
+\]
+\[
+0.1389 > 0.0972
+\]
+\textbf{Conclusion:} Rolling a total of 8 when \textbf{two dice} are rolled
+
+% Main section title
+\section*{Section 7.2}
+% Sub-title for Question 24
+\subsection*{Question 24}
+\begin{itemize}
+    \item[1.] Let \( E \) be the event that exactly 4 heads appear in the 5 flips. \\
+    \item[2.] Let\( F \) be the event that the first flip is tails.
+    \item[3.] We need to find \[ P(E|F) \]
+    \item[4.] \[ P(E|F) = \frac{P(E \cap F)}{P(F)} \]
+    \item[5.] \[ P(F) = \frac{1}{2} \]
+    \item[6.] \[ P(E \cap F) = \left(\frac{1}{2}\right)^4 = \frac{1}{16} \]
+    \item[7.] \[ P(E | F) = \frac{\frac{1}{16}}{\frac{1}{2}} = \frac{1}{8} \]
+\end{itemize}
+\textbf{Conclusion:} {\( \frac{1}{8} \)}
+% Sub-title for Question 34
+\subsection*{Question 34}
+\begin{itemize}
+    \item[a)] \( (1 - p)^n \)
+    \item[b)] \( 1 - (1 - p)^n \)
+    \item[c)] \( (1 - p)^n + n p (1 - p)^{n - 1} \)
+    \item[d)] \( 1 - (1 - p)^n - n p (1 - p)^{n - 1} \)
+\end{itemize}
+\end{document}
