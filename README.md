@@ -9,9 +9,9 @@
 ## Freshman Year:
 
 - **_Introduction to Computing and Programming (CSCI 1301) (Private)_**
-- **_Calculus I [(CSCI 2250)](https://github.com/thespcrewroy/Public-College)_**
+- **_Calculus I [(MATH 2250)](https://github.com/thespcrewroy/Public-College)_**
 - **_Software Development (CSCI 1302) (Private)_**
-- **_Calculus II [(CSCI 2260)](https://github.com/thespcrewroy/Public-College)_**
+- **_Calculus II [(MATH 2260)](https://github.com/thespcrewroy/Public-College)_**
 - **_Introduction to Computer Science [(CSCI 2150)](https://github.com/thespcrewroy/Public-College/tree/main/CSCI%202150)_**
 - **_Experiental Data Science Specialization - Beginner [(INFO 2000)](https://github.com/thespcrewroy/Public-College/tree/main/INFO%202000)_**
 - **_Native App Development in Swift [(NMIX 4030)](https://github.com/thespcrewroy/SwiftUIExercises)_**
