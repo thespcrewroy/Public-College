@@ -1,16 +1,25 @@
+
+<p align="center">
 <h1 align="center">CSCI 2150-2150L: Introduction to Computational Science</h1>
+</p>
 
 - **INSTRUCTOR**: Dr. Thiab R. Taha, e-mail: trtaha@uga.edu
 - **OFFICE**: Boyd Graduate Studies Research Center, Room 545
 - **PREREQUISITE**: Math 1113 or Permission of Department
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cut.png)](#contribution-guide)
 
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cut.png)](#contribution-guide)
+<p>
+  
 ## Recomended BOOKS and Materials
 - [ ] Numerical Mathematics and Computing by E. Ward Cheney and David R. Kincaid, 7th. Edition
 - [ ] [MATLAB Tutorials](https://www.mathworks.com/support/learn-with-matlab-tutorials.html)
 - [ ] [MATLAB Guide, Second Edition by Desmond J. Higham and Nicholas J. Higham](https://nhigham.com/matlab-guide/)
 - [ ] [MATLAB: An Introduction with Applications 5th Edition by Amos Gilat](https://www.amazon.com/stores/Amos-Gilat/author/B001I9OW7E?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true&ccs_id=b1ac33e5-8531-464e-a7c9-6265794a2a93)
 - [ ] [Mathworks Tutorials](https://www.mathworks.com/help/matlab/index.html?s_tid=hc_panel)
+
+</p>
+
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cut.png)](#contribution-guide)
 
 ## Topics Covered
@@ -23,6 +32,7 @@ simulations.
 6. Interpolation and curve fitting
 7. Differentiation and integration.
 8. Numerical solutions of ODEs
+
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cut.png)](#contribution-guide)
 
 ## Course Objectives
@@ -48,6 +58,7 @@ numbers and compute errors when floating point operations are involved.
 6. Solve linear system of equations using Gaussian elimination and available software.
 7. Find the roots of a nonlinear function and examine its correctness.
 8. Interpolate a table of values by using polynomials.
+
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cut.png)](#license)
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
