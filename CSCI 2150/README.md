@@ -1,6 +1,6 @@
 
-<p align="center">
-<h1 align="center">CSCI 2150-2150L: Introduction to Computational Science</h1>
+<p>
+<h1>CSCI 2150-2150L: Introduction to Computational Science</h1>
 </p>
 
 - **INSTRUCTOR**: Dr. Thiab R. Taha, e-mail: trtaha@uga.edu
