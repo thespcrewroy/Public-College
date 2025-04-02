@@ -52,3 +52,7 @@ INFO 3000/MiniProjects/.DS_Store
 CSCI 4900/placeholder.txt
 /CSCI 4900/data.cifar10
 /CSCI 4900/Homework/01-Neural-Network-Classifier/data.cifar10
+INFO 3000/Homeworks/.DS_Store
+/CSCI 4900/Homework/02-Convolutional-Neural-Network/__pycache__
+/CSCI 4900/Homework/02-Convolutional-Neural-Network/data.cifar10
+CSCI 4900/Homework/02-Convolutional-Neural-Network/model/cnn_model_42.pt
